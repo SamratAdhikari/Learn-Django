@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+
+    <h1>Welcome to Text Utility</h1>
+    <p>Hi {{ name }} from {{ address }}.</p>
+
+    <form action="/analyze" method="get">
+        <textarea name='text' placeholder="Please type your text here ..." style='width: 1186px; height: 235px;'></textarea>
+        
+        <br>
+        <input type="checkbox" name="removePunc">Remove Punctuations
+        <br>
+        <input type="checkbox" name="uppercase">Uppercase Letters
+        <br>
+        <input type="checkbox" name="lowercase">Lowercase Letters
+        <br>
+        <input type="checkbox" name="capitalize">Capitalize String
+        <br>
+        <input type="checkbox" name="spaceRmv">Remove Spaces
+        <br>
+        <input type="checkbox" name="charCount">Count Characters
+        <br>
+        
+        <button type="submit">Analyze Text</button>
+
+    </form>
+
+</body>
+</html>
